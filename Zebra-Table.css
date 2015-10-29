@@ -1,0 +1,50 @@
+table { 
+	text-align:center;
+	position: relative;
+
+  overflow: hidden;
+  border: 5px solid black;
+  width: 80%;
+	max-width:1500px;
+	min-width:600px;
+	border-collapse: collapse;
+	height:10000;
+	z-index:-10px;
+}
+
+td, th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+  background-color: #D4EFFF;
+  
+}
+
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+  
+}
+
+td:hover::after,
+th:hover::after {
+  background-color: #D4EFFF;
+  
+}
+
+
+
+
+
